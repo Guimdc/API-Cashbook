@@ -17,3 +17,19 @@ exports.delete=async(id)=>{
 exports.getBalance=async()=>{
     return await movimentoModel.getBalance();
 }
+
+exports.getBalanceDate=async()=>{
+    return await movimentoModel.getBalanceDate();
+}
+
+exports.getBalanceYearMonth=async(year, month)=>{
+    return await movimentoModel.getBalanceYearMonth(year, month);
+}
+
+exports.getBalanceYearMonthMonth=async(year, month1, month2)=>{
+    return await movimentoModel.getBalanceYearMonthMonth(year, month1, month2);
+}
+
+exports.getMovimentsYearMonth=async(year, month)=>{
+    return await movimentoModel.getMovimentsYearMonth(year, month);
+}
